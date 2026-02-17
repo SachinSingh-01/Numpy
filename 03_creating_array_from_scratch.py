@@ -1,0 +1,11 @@
+import numpy as np
+zeros=np.zeros((3,4))
+print("Zeros array:\n",zeros)
+ones=np.ones((2,3))
+print("One array: \n", ones)
+full=np.full((2,2),7)
+print("Full array:\n",full)
+random=np.random.randint((2,3))
+print("Randdom array:\n",random)
+sequence=np.arange(0, 10, 2)
+print("Sequence array:\n",sequence)
