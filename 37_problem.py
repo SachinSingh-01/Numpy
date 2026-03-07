@@ -141,4 +141,53 @@ What is total memory used (in bytes)?'''
 # print("Shape:",a.shape)
 # print("Total memory use:",a.nbytes)
 
+'''13.Create a NumPy array containing numbers from 1 to 10.
+Print:shape,size,ndim'''
+# import numpy as np
+# arr=np.array([1,2,3,4,5,6,7,8,9,10])
+# print("Shape:",arr.shape)
+# print("Size:",arr.size)
+# print("Ndim:",arr.ndim)
 
+'''14.Create an array of 5 zeros and another array of 5 ones.
+Add them together and print the result.
+Expected logic: element-wise addition.'''
+# import numpy as np
+# arr_zeros=np.zeros(5)
+# arr_ones=np.ones(5)
+# print(arr_zeros)
+# print(arr_ones)
+# print("Sum of array:",arr_zeros+arr_ones)
+
+'''15.Create this array:
+[10, 20, 30, 40, 50]
+Print:first element,last element,middle element.'''
+# import numpy as np
+# arr=np.array([10, 20, 30, 40, 50])
+# print("First element:",arr[0])
+# print("Last element:",arr[-1])
+# print("Middle element:",arr[2])
+
+'''16.Create this array:
+[1,2,3,4,5,6,7,8,9,10]
+Slice the array to get:
+[4,5,6,7]'''
+# import numpy as np
+# arr_1d=np.array([1,2,3,4,5,6,7,8,9,10])
+# print("Slice:",arr_1d[3:7])
+
+'''17.Create a 2x3 array of ones.
+Print its:shape,size,ndim'''
+import numpy as np
+arr_ones=np.ones((2,3))
+print(arr_ones)
+print("Shape:",arr_ones.shape)
+print("Size:",arr_ones.size)
+print("Ndim:",arr_ones.ndim)
+
+'''18. Create an array using:
+np.arange(1,21)
+Select only the numbers greater than 10.'''
+import numpy as np
+arr=np.arange(1,21)
+print("Number greater than 10:",arr[arr>10])
