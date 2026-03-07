@@ -121,8 +121,24 @@ Answer:
 ndim
 size
 total memory usage in bytes'''
-import numpy as np
-a=np.zeros((5,4,3),dtype=np.float64)
-print("Ndim:",a.ndim)
-print("Shape:",a.size)
-print("Total memory use:",a.nbytes)
+# import numpy as np
+# a=np.zeros((5,4,3),dtype=np.float64)
+# print("Ndim:",a.ndim)
+# print("Shape:",a.size)
+# print("Total memory use:",a.nbytes)
+
+'''12.You are storing grayscale images:
+100 images
+Each image size 28x28
+dtype = float32
+Answer:
+What should be the shape?
+What is ndim?
+What is total memory used (in bytes)?'''
+# import numpy as np
+# a=np.zeros((100,28,28), dtype=np.float32)
+# print("Ndim:",a.ndim)
+# print("Shape:",a.shape)
+# print("Total memory use:",a.nbytes)
+
+
