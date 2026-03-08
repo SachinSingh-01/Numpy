@@ -246,7 +246,40 @@ Stack them:vertically,horizontally'''
 '''24.Create this array:
 np.arange(1,25).reshape(2,12)
 Split it into 3 equal arrays using hsplit().'''
+# import numpy as np
+# arr=np.arange(1,25).reshape(2,12)
+# print(arr)
+# print("Split:",np.hsplit(arr,3))
+
+'''25.Using the same array, split it after column 4 and column 8.'''
 import numpy as np
-arr=np.arange(1,25).reshape(2,12)
-print(arr)
-print("Split:",np.hsplit(arr,3))
+arr = np.arange(1, 25).reshape(2, 12)
+parts = np.split(arr, [4, 8], axis=1)
+for i, p in enumerate(parts):
+    print(f"Part {i+1}:\n{p}\n")
+
+'''26.Create this array:
+[[1,2,3],
+ [4,5,6],
+ [7,8,9]]
+Extract the second row and modify its first value.'''
+# import numpy as np
+# arr=np.array([[1,2,3],
+#  [4,5,6],
+#  [7,8,9]])
+# second_row=arr[1]
+
+# second_row[0]=99
+# print(arr)
+
+'''27.Now repeat the previous question but use .copy() before modifying.
+Check if the original array changes.'''
+# import numpy as np
+# arr=np.array([[1,2,3],
+#             [4,5,6],
+#             [7,8,9]])
+# second_row=arr[1].copy()
+
+# second_row[0]=45
+# print("Original array:",arr)
+# print(second_row)
