@@ -178,16 +178,75 @@ Slice the array to get:
 
 '''17.Create a 2x3 array of ones.
 Print its:shape,size,ndim'''
-import numpy as np
-arr_ones=np.ones((2,3))
-print(arr_ones)
-print("Shape:",arr_ones.shape)
-print("Size:",arr_ones.size)
-print("Ndim:",arr_ones.ndim)
+# import numpy as np
+# arr_ones=np.ones((2,3))
+# print(arr_ones)
+# print("Shape:",arr_ones.shape)
+# print("Size:",arr_ones.size)
+# print("Ndim:",arr_ones.ndim)
 
 '''18. Create an array using:
 np.arange(1,21)
 Select only the numbers greater than 10.'''
+# import numpy as np
+# arr=np.arange(1,21)
+# print("Number greater than 10:",arr[arr>10])
+
+'''19.Create this array:
+[1,2,3,4,5,6,7,8,9,10]
+Select only the even numbers'''
+# import numpy as np
+# arr=np.array([1,2,3,4,5,6,7,8,9,10])
+# print("Even number:",arr[arr%2==0])
+
+'''20.Create a 3x4 array using np.arange() and reshape().
+Example structure:
+[[1 2 3 4]
+ [5 6 7 8]
+ [9 10 11 12]]
+Find:sum of all elements,sum of rows,sum of columns'''
+# import numpy as np
+# arr=np.arange(1,13).reshape((3,4))
+# print(arr)
+# print("Sum of all the element:",arr.sum())
+# print("Sum across rows:",arr.sum(axis=1))
+# print("Sum across columns:",arr.sum(axis=0))
+
+'''21.Create a 1D array
+[1,2,3,4,5,6]
+Convert it into:a row vector,a column vector'''
+# import numpy as np
+# arr_1d=np.array([1,2,3,4,5,6])
+# print("Row vector:",arr_1d.reshape(1,-1))
+# print("Column vector:",arr_1d.reshape(-1,1))
+
+'''22.Create this array:
+[5,10,15,20,25]
+Multiply every element by 3 using broadcasting.'''
+# import numpy as np
+# arr_mul=np.array([5,10,15,20,25])
+# print("Multiply by 3:",arr_mul*3)
+
+'''23.Create two arrays:
+a1 =
+[[1,1],
+ [2,2]]
+a2 =
+[[3,3],
+ [4,4]]
+Stack them:vertically,horizontally'''
+# import numpy as np
+# a1 =np.array([[1,1],
+#             [2,2]])
+# a2 =np.array([[3,3],
+#             [4,4]])
+# print("Vertically stack:",np.vstack((a1,a2)))
+# print("Horizontally stack:",np.hstack((a1,a2)))
+
+'''24.Create this array:
+np.arange(1,25).reshape(2,12)
+Split it into 3 equal arrays using hsplit().'''
 import numpy as np
-arr=np.arange(1,21)
-print("Number greater than 10:",arr[arr>10])
+arr=np.arange(1,25).reshape(2,12)
+print(arr)
+print("Split:",np.hsplit(arr,3))
