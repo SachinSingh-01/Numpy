@@ -252,11 +252,11 @@ Split it into 3 equal arrays using hsplit().'''
 # print("Split:",np.hsplit(arr,3))
 
 '''25.Using the same array, split it after column 4 and column 8.'''
-import numpy as np
-arr = np.arange(1, 25).reshape(2, 12)
-parts = np.split(arr, [4, 8], axis=1)
-for i, p in enumerate(parts):
-    print(f"Part {i+1}:\n{p}\n")
+# import numpy as np
+# arr = np.arange(1, 25).reshape(2, 12)
+# parts = np.split(arr, [4, 8], axis=1)
+# for i, p in enumerate(parts):
+#     print(f"Part {i+1}:\n{p}\n")
 
 '''26.Create this array:
 [[1,2,3],
@@ -283,3 +283,57 @@ Check if the original array changes.'''
 # second_row[0]=45
 # print("Original array:",arr)
 # print(second_row)
+
+'''28.Create a 3x3 matrix:
+[[1,2,3],
+ [4,5,6],
+ [7,8,9]]
+Add this vector using broadcasting:'''
+# import numpy as np
+# arr=np.array([[1,2,3],
+# [4,5,6],
+# [7,8,9]])
+# vector=np.array([10,20,30])
+# result=arr+vector
+# print(result)
+
+'''29.Create a 4x4 random integer matrix.
+Select all numbers that are:
+greater than 5
+less than 12'''
+# import numpy as np
+
+# random_arr=np.random.randint(1,20,(4,4))
+# print(random_arr)
+# print("Number greater than 5:",random_arr[random_arr>5])
+# print("Number less than 12:",random_arr[random_arr<12])
+
+'''30.Create this array:
+[3,7,1,9,5]
+Sort the array.
+Then print the index positions of sorted elements using argsort().'''
+import numpy as np
+arr=np.array([3,7,1,9,5])
+print("Sorted:",arr.sort())
+print("Index sort:",arr.argsort())
+
+'''31.Create an array from 1 to 12.
+Reshape it into 3x4, then reshape it again into 2x6.
+Explain why this works.'''
+# import numpy as np
+# arr=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+# print("Reshape to 3x4:",arr.reshape(3,4))
+# print("Reshape to 2x6:",arr.reshape(2,6))
+
+'''32.You are storing 100 grayscale images.
+Each image size = 28x28
+dtype = float32
+What should be the array shape?
+What is ndim?
+How many elements are stored?
+Total memory used in bytes?'''
+import numpy as np
+arr=np.zeros((28,28,100))
+print("Ndim:",arr.ndim)
+print("Shape:",arr.shape)
+print("Total memory use:",arr.nbytes)
