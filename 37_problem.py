@@ -332,12 +332,41 @@ What should be the array shape?
 What is ndim?
 How many elements are stored?
 Total memory used in bytes?'''
+# import numpy as np
+# arr=np.zeros((28,28,100))
+# print("Ndim:",arr.ndim)
+# print("Shape:",arr.shape)
+# print("Total memory use:",arr.nbytes)
+
+'''33.Create two arrays:
+a1 =
+[[1,1],
+ [2,2]]
+a2 =
+[[3,3],
+ [4,4]]
+Stack them:
+vertically
+horizontally'''
+# import numpy as np
+# a1 =[[1,1],
+#  [2,2]]
+# a2 =[[3,3],
+#  [4,4]]
+# vertically_stack=np.vstack((a1,a2))
+# horizontally_stack=np.hstack((a1,a2))
+# print("Vertically:",vertically_stack)
+# print("Horizontally:",horizontally_stack)
+
+'''34.Create this array:
+np.arange(1,25).reshape(2,12)
+Split it into 3 equal arrays.'''
 import numpy as np
-arr=np.zeros((28,28,100))
-print("Ndim:",arr.ndim)
-print("Shape:",arr.shape)
-print("Total memory use:",arr.nbytes)
-
-
-
-
+arr=np.arange(1,25).reshape(2,12)
+split=np.array_split(arr,3)
+print(split)
+print(arr)
+print("\nSplit arrays:")
+for i, sub_array in enumerate(split):
+    print(f"Part {i+1}:")
+    print(sub_array)
