@@ -312,10 +312,10 @@ less than 12'''
 [3,7,1,9,5]
 Sort the array.
 Then print the index positions of sorted elements using argsort().'''
-import numpy as np
-arr=np.array([3,7,1,9,5])
-print("Sorted:",arr.sort())
-print("Index sort:",arr.argsort())
+# import numpy as np
+# arr=np.array([3,7,1,9,5])
+# print("Sorted:",arr.sort())
+# print("Index sort:",arr.argsort())
 
 '''31.Create an array from 1 to 12.
 Reshape it into 3x4, then reshape it again into 2x6.
@@ -337,3 +337,7 @@ arr=np.zeros((28,28,100))
 print("Ndim:",arr.ndim)
 print("Shape:",arr.shape)
 print("Total memory use:",arr.nbytes)
+
+
+
+
