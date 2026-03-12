@@ -361,12 +361,22 @@ horizontally'''
 '''34.Create this array:
 np.arange(1,25).reshape(2,12)
 Split it into 3 equal arrays.'''
+# import numpy as np
+# arr=np.arange(1,25).reshape(2,12)
+# split=np.array_split(arr,3)
+# print(split)
+# print(arr)
+# print("\nSplit arrays:")
+# for i, sub_array in enumerate(split):
+#     print(f"Part {i+1}:")
+#     print(sub_array)
+
+'''35.Create a 3x3 matrix.
+Select:
+first row
+last column'''
 import numpy as np
-arr=np.arange(1,25).reshape(2,12)
-split=np.array_split(arr,3)
-print(split)
+arr=np.random.randint(1,12,(3,3))
 print(arr)
-print("\nSplit arrays:")
-for i, sub_array in enumerate(split):
-    print(f"Part {i+1}:")
-    print(sub_array)
+element=arr[0,-1]
+print(element)
