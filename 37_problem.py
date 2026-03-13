@@ -375,8 +375,41 @@ Split it into 3 equal arrays.'''
 Select:
 first row
 last column'''
+# import numpy as np
+# arr=np.random.randint(1,12,(3,3))
+# print(arr)
+# element=arr[0,-1]
+# print(element)
+
+'''36.Create a matrix:
+[[1,2,3],
+ [4,5,6],
+ [7,8,9]]
+Find:
+max value
+min value
+sum of elements'''
+# import numpy as np
+# arr=np.array([[1,2,3],
+#  [4,5,6],
+#  [7,8,9]])
+# print("Maximum number:",arr.max())
+# print("Minimum number:",arr.min())
+# print("Sum of element:",arr.sum())
+
+'''37.Find the sum of columns of the matrix above'''
+# import numpy as np
+# arr=np.array([[1,2,3],
+# [4,5,6],
+# [7,8,9]])
+# print("Sum of column:",arr.sum(axis=0))
+# print("Sum of row:",arr.sum(axis=1))
+
+'''38.Create this array:
+[11,11,12,13,14,12,11]
+Find unique values.'''
 import numpy as np
-arr=np.random.randint(1,12,(3,3))
-print(arr)
-element=arr[0,-1]
-print(element)
+arr=np.array([11,11,12,13,14,12,11])
+unique_number=np.unique(arr)
+print("Unique values:",unique_number)
+
