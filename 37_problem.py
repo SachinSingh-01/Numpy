@@ -408,8 +408,13 @@ sum of elements'''
 '''38.Create this array:
 [11,11,12,13,14,12,11]
 Find unique values.'''
+# import numpy as np
+# arr=np.array([11,11,12,13,14,12,11])
+# unique_number=np.unique(arr)
+# print("Unique values:",unique_number)
+
+'''39.Find count of each unique value.'''
 import numpy as np
 arr=np.array([11,11,12,13,14,12,11])
-unique_number=np.unique(arr)
-print("Unique values:",unique_number)
-
+count_unique=np.unique_counts(arr)
+print("Unique count=",count_unique)
