@@ -414,7 +414,64 @@ Find unique values.'''
 # print("Unique values:",unique_number)
 
 '''39.Find count of each unique value.'''
+# import numpy as np
+# arr=np.array([11,11,12,13,14,12,11])
+# count_unique=np.unique_counts(arr)
+# print("Unique count=",count_unique)
+
+'''40.Find indices of first occurrence of each unique value.'''
+# import numpy as np
+# arr=np.array([11,11,12,13,14,12,11])
+# unique_number,first_occurrence=np.unique(arr,return_counts=True)
+# print("Unique_number:",unique_number)
+# print("Indices of first occurrence:",first_occurrence)
+
+'''41.Create this matrix:
+[[1,2,3,4],
+ [5,6,7,8],
+ [9,10,11,12],
+ [1,2,3,4]]
+Find unique rows.'''
+# import numpy as np
+# arr=np.array([[1,2,3,4],
+# [5,6,7,8],
+# [9,10,11,12],
+# [1,2,3,4]])
+# unique_rows=np.unique(arr,axis=0)
+# print("Unique row:",unique_rows)
+
+'''42.Create an array:
+[3,7,1,9,5]
+Sort the array.'''
+# import numpy as np
+# arr=np.array([3,7,1,9,5])
+# sorted=np.sort(arr)
+# print("Sorted array:",sorted)
+
+'''43.Find the index positions of sorted elements using argsort().'''
+# import numpy as np
+# arr=np.array([3,7,1,9,5])
+# index=np.argsort(arr)
+# print(index)
+
+'''44.Create a 5x5 random matrix.
+Find:
+max of each column
+min of each row'''
+# import numpy as np
+# arr=np.random.randint(2,22,(5,5))
+# print(arr)
+# Maximum_column=np.max(arr,axis=0)
+# Minimum_row=np.min(arr,axis=1)
+# print("Maximum columns:",Maximum_column)
+# print("Minimum rows:",Minimum_row)
+
+'''Create a dataset of 100 random integers between 0 and 50.
+Find:mean,max,min,standard deviation'''
 import numpy as np
-arr=np.array([11,11,12,13,14,12,11])
-count_unique=np.unique_counts(arr)
-print("Unique count=",count_unique)
+arr=np.random.randint(1,100,size=100)
+print(arr)
+print("Maximum number:",arr.max())
+print("Minimum number:",arr.min())
+print("Minimum number:",arr.mean())
+print("Standard deviation:",arr.std())
