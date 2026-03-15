@@ -466,12 +466,25 @@ min of each row'''
 # print("Maximum columns:",Maximum_column)
 # print("Minimum rows:",Minimum_row)
 
-'''Create a dataset of 100 random integers between 0 and 50.
+'''45.Create a dataset of 100 random integers between 0 and 50.
 Find:mean,max,min,standard deviation'''
+# import numpy as np
+# arr=np.random.randint(1,100,size=100)
+# print(arr)
+# print("Maximum number:",arr.max())
+# print("Minimum number:",arr.min())
+# print("Minimum number:",arr.mean())
+# print("Standard deviation:",arr.std())
+
+'''46.Reshape that dataset into 10x10 matrix.'''
+# import numpy as np
+# arr=np.random.randint(1,100,size=100)
+# reshaping=np.reshape(arr,(10,10))
+# print("Reshaping array:",reshaping)
+
+'''47.Find unique values and their frequency.'''
 import numpy as np
 arr=np.random.randint(1,100,size=100)
-print(arr)
-print("Maximum number:",arr.max())
-print("Minimum number:",arr.min())
-print("Minimum number:",arr.mean())
-print("Standard deviation:",arr.std())
+unique_number,count=np.unique(arr,return_counts=True)
+print("Unique number:",unique_number)
+print("Count=",count)
