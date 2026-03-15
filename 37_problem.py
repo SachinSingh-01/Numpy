@@ -483,8 +483,17 @@ Find:mean,max,min,standard deviation'''
 # print("Reshaping array:",reshaping)
 
 '''47.Find unique values and their frequency.'''
+# import numpy as np
+# arr=np.random.randint(1,100,size=100)
+# unique_number,count=np.unique(arr,return_counts=True)
+# print("Unique number:",unique_number)
+# print("Count=",count)
+
+'''48.Normalize the matrix by dividing all elements by 10.'''
 import numpy as np
 arr=np.random.randint(1,100,size=100)
-unique_number,count=np.unique(arr,return_counts=True)
-print("Unique number:",unique_number)
-print("Count=",count)
+normalize=arr/10.0
+divideby10=(arr%10==0)
+divisible_element=arr[divideby10]
+print("Normalize array:",normalize)
+print("Number divisible by 10:",divisible_element)
