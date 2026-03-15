@@ -500,8 +500,24 @@ Find:mean,max,min,standard deviation'''
 
 '''49.Create a 4x4 matrix.
 Replace all values greater than 10 with 0.'''
+# import numpy as np
+# random_array=np.random.randint(1,20,(4,4))
+# print("Array:",random_array)
+# result=np.where(random_array>10,0,random_array)
+# print("Number greater than 10:",result)
+
+'''50.Find positions of values greater than 15 using np.nonzero().'''
+# import numpy as np
+# random_array=np.random.randint(1,20,(4,4))
+# greater=np.nonzero(random_array>15)
+# print("Number greater than 15",greater)
+
+'''51.Create two matrices of shape 3x4 and perform:
+addition,multiplication'''
 import numpy as np
-random_array=np.random.randint(1,20,(4,4))
-print("Array:",random_array)
-result=np.where(random_array>10,0,random_array)
-print("Number greater than 10:",result)
+random_array=np.random.randint(1,20,(3,4))
+random_array1=np.random.randint(1,10,(3,4))
+addition=random_array+random_array1
+multiplication=random_array*random_array1
+print("Addition:",addition)
+print("Multiplication:",multiplication)
