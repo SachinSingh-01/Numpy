@@ -514,10 +514,17 @@ Replace all values greater than 10 with 0.'''
 
 '''51.Create two matrices of shape 3x4 and perform:
 addition,multiplication'''
+# import numpy as np
+# random_array=np.random.randint(1,20,(3,4))
+# random_array1=np.random.randint(1,10,(3,4))
+# addition=random_array+random_array1
+# multiplication=random_array*random_array1
+# print("Addition:",addition)
+# print("Multiplication:",multiplication)
+
+'''52.Create a matrix and extract the diagonal elements.'''
 import numpy as np
-random_array=np.random.randint(1,20,(3,4))
-random_array1=np.random.randint(1,10,(3,4))
-addition=random_array+random_array1
-multiplication=random_array*random_array1
-print("Addition:",addition)
-print("Multiplication:",multiplication)
+random_array=np.random.randint(1,20,(4,4))
+diagonal=np.diagonal(random_array)
+print(random_array)
+print("Diagonal:",diagonal)
