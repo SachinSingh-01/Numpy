@@ -490,10 +490,18 @@ Find:mean,max,min,standard deviation'''
 # print("Count=",count)
 
 '''48.Normalize the matrix by dividing all elements by 10.'''
+# import numpy as np
+# arr=np.random.randint(1,100,size=100)
+# normalize=arr/10.0
+# divideby10=(arr%10==0)
+# divisible_element=arr[divideby10]
+# print("Normalize array:",normalize)
+# print("Number divisible by 10:",divisible_element)
+
+'''49.Create a 4x4 matrix.
+Replace all values greater than 10 with 0.'''
 import numpy as np
-arr=np.random.randint(1,100,size=100)
-normalize=arr/10.0
-divideby10=(arr%10==0)
-divisible_element=arr[divideby10]
-print("Normalize array:",normalize)
-print("Number divisible by 10:",divisible_element)
+random_array=np.random.randint(1,20,(4,4))
+print("Array:",random_array)
+result=np.where(random_array>10,0,random_array)
+print("Number greater than 10:",result)
