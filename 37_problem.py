@@ -586,11 +586,29 @@ B =
 [[5,6],
  [7,8]]
 Multiply matrix A and B element-wise.'''
-import numpy as np
-a=np.array([[1,2],
-[3,4]])
+# import numpy as np
+# a=np.array([[1,2],
+# [3,4]])
 
-b=np.array =([[5,6],
-[7,8]])
-multiply_element_wise=a*b
-print("Multiply:",multiply_element_wise)
+# b=np.array =([[5,6],
+# [7,8]])
+# multiply_element_wise=a*b
+# print("Multiply:",multiply_element_wise)
+
+'''60.Transpose the random matrix. and find it's maximum and minimum value of each rows an column
+'''
+import numpy as np
+random_array=np.random.randint(1,20,(4,4))
+print(random_array)
+transpose=random_array.T
+print("Transpose array")
+print(transpose)
+maximum_column=np.max(transpose,axis=0)
+maximum_row=np.max(transpose,axis=1)
+minimum_column=np.min(transpose,axis=0)
+minimum_row=np.min(transpose,axis=1)
+print("Maximum_column:",maximum_column)
+print("Maximum_column:",maximum_row)
+print("Minimum_column:",minimum_column)
+print("Minimum_column:",minimum_row)
+# after 18
