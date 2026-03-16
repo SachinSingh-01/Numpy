@@ -523,8 +523,19 @@ addition,multiplication'''
 # print("Multiplication:",multiplication)
 
 '''52.Create a matrix and extract the diagonal elements.'''
+# import numpy as np
+# random_array=np.random.randint(1,20,(4,4))
+# diagonal=np.diagonal(random_array)
+# print(random_array)
+# print("Diagonal:",diagonal)
+
+'''53.Create a matrix and calculate the mean of each column and each row.'''
 import numpy as np
 random_array=np.random.randint(1,20,(4,4))
-diagonal=np.diagonal(random_array)
 print(random_array)
-print("Diagonal:",diagonal)
+mean_column=random_array.mean(axis=0)
+mean_row=random_array.mean(axis=1)
+print("Mean of column:",mean_column)
+print("Mean of rows:",mean_row)
+
+'''Create a random 5x5 matrix and sort each row and each column.'''
