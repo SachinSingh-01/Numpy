@@ -538,13 +538,20 @@ addition,multiplication'''
 # print("Mean of column:",mean_column)
 # print("Mean of rows:",mean_row)
 
-'''Create a random 5x5 matrix and sort each row and each column.'''
+'''54.Create a random 5x5 matrix and sort each row and each column.'''
+# import numpy as np
+# random_array=np.random.randint(2,30,(5,5))
+# print(random_array)
+# print("\n")
+# sort_row=np.sort(random_array,axis=1)
+# sort_column=np.sort(random_array,axis=0)
+# print(sort_row)
+# print("\n")
+# print(sort_column)
+
+'''55.Create a matrix and flatten it into 1D array.'''
 import numpy as np
-random_array=np.random.randint(2,30,(5,5))
+random_array=np.random.randint(2,30,(2,3))
 print(random_array)
-print("\n")
-sort_row=np.sort(random_array,axis=1)
-sort_column=np.sort(random_array,axis=0)
-print(sort_row)
-print("\n")
-print(sort_column)
+flattent=random_array.flatten()
+print("Flattent:",flattent)
