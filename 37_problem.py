@@ -572,9 +572,25 @@ addition,multiplication'''
 # print(transpose)
 
 '''58.Transpose that column vector.'''
+# import numpy as np
+# random_array=np.random.randint(2,30,(3,1))
+# print(random_array)
+# print("Transpose the column vector")
+# transpose=random_array.T
+# print(transpose)
+
+'''59.A =
+[[1,2],
+ [3,4]]
+B =
+[[5,6],
+ [7,8]]
+Multiply matrix A and B element-wise.'''
 import numpy as np
-random_array=np.random.randint(2,30,(3,1))
-print(random_array)
-print("Transpose the column vector")
-transpose=random_array.T
-print(transpose)
+a=np.array([[1,2],
+[3,4]])
+
+b=np.array =([[5,6],
+[7,8]])
+multiply_element_wise=a*b
+print("Multiply:",multiply_element_wise)
