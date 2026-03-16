@@ -550,8 +550,15 @@ addition,multiplication'''
 # print(sort_column)
 
 '''55.Create a matrix and flatten it into 1D array.'''
+# import numpy as np
+# random_array=np.random.randint(2,30,(2,3))
+# print(random_array)
+# flattent=random_array.flatten()
+# print("Flattent:",flattent)
+
+'''56.Create a large matrix (100x100) and compute its total sum.'''
 import numpy as np
-random_array=np.random.randint(2,30,(2,3))
+random_array=np.random.randint(2,30,(100,100))
 print(random_array)
-flattent=random_array.flatten()
-print("Flattent:",flattent)
+total=random_array.sum()
+print("Total sum:",total)
