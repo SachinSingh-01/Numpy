@@ -557,8 +557,24 @@ addition,multiplication'''
 # print("Flattent:",flattent)
 
 '''56.Create a large matrix (100x100) and compute its total sum.'''
+# import numpy as np
+# random_array=np.random.randint(2,30,(100,100))
+# print(random_array)
+# total=random_array.sum()
+# print("Total sum:",total)
+
+'''57.Transpose the matrix an array from 1 to 12 using np.arange().Print its new shape.'''
+# import numpy as np
+# random=np.random.randint(1,12,(2,2))
+# print(random)
+# transpose=random.T
+# print("Transpose")
+# print(transpose)
+
+'''58.Transpose that column vector.'''
 import numpy as np
-random_array=np.random.randint(2,30,(100,100))
+random_array=np.random.randint(2,30,(3,1))
 print(random_array)
-total=random_array.sum()
-print("Total sum:",total)
+print("Transpose the column vector")
+transpose=random_array.T
+print(transpose)
