@@ -597,18 +597,24 @@ Multiply matrix A and B element-wise.'''
 
 '''60.Transpose the random matrix. and find it's maximum and minimum value of each rows an column
 '''
-import numpy as np
-random_array=np.random.randint(1,20,(4,4))
-print(random_array)
-transpose=random_array.T
-print("Transpose array")
-print(transpose)
-maximum_column=np.max(transpose,axis=0)
-maximum_row=np.max(transpose,axis=1)
-minimum_column=np.min(transpose,axis=0)
-minimum_row=np.min(transpose,axis=1)
-print("Maximum_column:",maximum_column)
-print("Maximum_column:",maximum_row)
-print("Minimum_column:",minimum_column)
-print("Minimum_column:",minimum_row)
-# after 18
+# import numpy as np
+# random_array=np.random.randint(1,20,(4,4))
+# print(random_array)
+# transpose=random_array.T
+# print("Transpose array")
+# print(transpose)
+# maximum_column=np.max(transpose,axis=0)
+# maximum_row=np.max(transpose,axis=1)
+# minimum_column=np.min(transpose,axis=0)
+# minimum_row=np.min(transpose,axis=1)
+# print("Maximum_column:",maximum_column)
+# print("Maximum_column:",maximum_row)
+# print("Minimum_column:",minimum_column)
+# print("Minimum_column:",minimum_row)
+
+'''61.Replace values greater than 40 with 0.'''
+# import numpy as np
+# random_array=np.random.randint(30,60,(4,4))
+# print(random_array)
+# random_array[random_array>40]=0
+# print(random_array)
