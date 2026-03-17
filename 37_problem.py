@@ -661,7 +661,8 @@ Reverse only the rows and column.'''
 
 '''66.Create a matrix using:
 np.arange(1,13).reshape(3,4)
-Flip the matrix completely also reversed only the second row.'''
+Flip the matrix completely also reversed only the second row.
+also reverse only the third column'''
 import numpy as np
 arr=np.arange(1,13).reshape(3,4)
 print(arr)
@@ -671,4 +672,6 @@ print(flip)
 print("Reversed only second row")
 arr[1] = np.flip(arr[1])
 print(arr)
-# rev_sec_row=np.flip(arr[2])
+print("Reversed only third column")
+arr[:, 2]=np.flip(arr[:, 2],axis=0)
+print(arr)
