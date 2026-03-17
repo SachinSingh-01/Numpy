@@ -618,3 +618,17 @@ Multiply matrix A and B element-wise.'''
 # print(random_array)
 # random_array[random_array>40]=0
 # print(random_array)
+
+'''62.Create the following array:
+[1,2,3,4,5,6,7,8]
+Reverse the array using np.flip().'''
+# import numpy as np
+# a=np.array([1,2,3,4,5,6,7,8])
+# flip=np.flip(a)
+# print(flip)
+
+'''63.Create the same array and reverse it using Python slicing.'''
+import numpy as np
+a=np.array([1,2,3,4,5,6,7,8])
+slicing=a[::-1]
+print(slicing)
