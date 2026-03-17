@@ -648,13 +648,27 @@ Flip the entire matrix.'''
  [4,5,6],
  [7,8,9]]
 Reverse only the rows and column.'''
+# import numpy as np
+# arr=np.array([[1,2,3],
+# [4,5,6],
+# [7,8,9]])
+# rev_only_row=np.flip(arr,axis=0)
+# rev_only_column=np.flip(arr,axis=1)
+# print("Row reverse")
+# print(rev_only_row)
+# print("Column reverse")
+# print(rev_only_column)
+
+'''66.Create a matrix using:
+np.arange(1,13).reshape(3,4)
+Flip the matrix completely also reversed only the second row.'''
 import numpy as np
-arr=np.array([[1,2,3],
-[4,5,6],
-[7,8,9]])
-rev_only_row=np.flip(arr,axis=0)
-rev_only_column=np.flip(arr,axis=1)
-print("Row reverse")
-print(rev_only_row)
-print("Column reverse")
-print(rev_only_column)
+arr=np.arange(1,13).reshape(3,4)
+print(arr)
+flip=np.flip(arr)
+print("Fliped")
+print(flip)
+print("Reversed only second row")
+arr[1] = np.flip(arr[1])
+print(arr)
+# rev_sec_row=np.flip(arr[2])
