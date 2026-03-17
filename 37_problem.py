@@ -628,7 +628,33 @@ Reverse the array using np.flip().'''
 # print(flip)
 
 '''63.Create the same array and reverse it using Python slicing.'''
+# import numpy as np
+# a=np.array([1,2,3,4,5,6,7,8])
+# slicing=a[::-1]
+# print(slicing)
+
+'''64.Create the matrix:
+[[1,2,3],
+ [4,5,6]]
+Flip the entire matrix.'''
+# import numpy as np
+# arr_2d=np.array([[1,2,3],
+# [4,5,6]])
+# flip=np.flip(arr_2d)
+# print(flip)
+
+'''65.Create the matrix:
+[[1,2,3],
+ [4,5,6],
+ [7,8,9]]
+Reverse only the rows and column.'''
 import numpy as np
-a=np.array([1,2,3,4,5,6,7,8])
-slicing=a[::-1]
-print(slicing)
+arr=np.array([[1,2,3],
+[4,5,6],
+[7,8,9]])
+rev_only_row=np.flip(arr,axis=0)
+rev_only_column=np.flip(arr,axis=1)
+print("Row reverse")
+print(rev_only_row)
+print("Column reverse")
+print(rev_only_column)
