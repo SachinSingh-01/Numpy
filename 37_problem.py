@@ -678,13 +678,26 @@ also reverse only the third column'''
 
 '''67.Create a 5x5 random matrix.
 Reverse the middle row and second column'''
+# import numpy as np
+# random_arr=np.random.randint(10,30,(5,5))
+# print("random array")
+# print(random_arr)
+# print("Reversed middle row")
+# random_arr[2]=np.flip(random_arr[2])
+# print(random_arr)
+# print("Second column")
+# # random_arr[:, 1]=np.flip(random_arr[:, 1],axis=0)
+# random_arr[:,1]=np.flip(random_arr[:,1],axis=0)
+# print(random_arr)
+
+'''68.Create a 4x5 matrix.
+Flip it and verify if the sum of elements changes or not.'''
 import numpy as np
-random_arr=np.random.randint(10,30,(5,5))
-print("random array")
+random_arr=np.random.randint(10,30,(4,5))
 print(random_arr)
-print("Reversed middle row")
-random_arr[2]=np.flip(random_arr[2])
-print(random_arr)
-print("Second column")
-random_arr[:, 1]=np.flip(random_arr[:, 1],axis=0)
-print(random_arr)
+total=random_arr.sum()
+print("Total sum of random_arr:",total)
+flipped=np.flip(random_arr)
+after_flipped=flipped.sum()
+print("Sum after flipped:",after_flipped)
+
