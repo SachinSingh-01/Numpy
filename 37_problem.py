@@ -692,12 +692,24 @@ Reverse the middle row and second column'''
 
 '''68.Create a 4x5 matrix.
 Flip it and verify if the sum of elements changes or not.'''
-import numpy as np
-random_arr=np.random.randint(10,30,(4,5))
-print(random_arr)
-total=random_arr.sum()
-print("Total sum of random_arr:",total)
-flipped=np.flip(random_arr)
-after_flipped=flipped.sum()
-print("Sum after flipped:",after_flipped)
+# import numpy as np
+# random_arr=np.random.randint(10,30,(4,5))
+# print(random_arr)
+# total=random_arr.sum()
+# print("Total sum of random_arr:",total)
+# flipped=np.flip(random_arr)
+# after_flipped=flipped.sum()
+# print("Sum after flipped:",after_flipped)
 
+'''69.Create a 3x4 matrix.
+Flip it twice using np.flip().
+Check if it returns the original matrix.'''
+import numpy as np
+random_arr=np.random.randint(10,30,(3,4))
+print(random_arr)
+flipped=np.flip(random_arr)
+print("First filp:")
+print(flipped)
+flipped2=np.flip(flipped)
+print("Second flip")
+print(flipped2)
