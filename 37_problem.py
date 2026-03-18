@@ -663,15 +663,28 @@ Reverse only the rows and column.'''
 np.arange(1,13).reshape(3,4)
 Flip the matrix completely also reversed only the second row.
 also reverse only the third column'''
+# import numpy as np
+# arr=np.arange(1,13).reshape(3,4)
+# print(arr)
+# flip=np.flip(arr)
+# print("Fliped")
+# print(flip)
+# print("Reversed only second row")
+# arr[1] = np.flip(arr[1])
+# print(arr)
+# print("Reversed only third column")
+# arr[:, 2]=np.flip(arr[:, 2],axis=0)
+# print(arr)
+
+'''67.Create a 5x5 random matrix.
+Reverse the middle row and second column'''
 import numpy as np
-arr=np.arange(1,13).reshape(3,4)
-print(arr)
-flip=np.flip(arr)
-print("Fliped")
-print(flip)
-print("Reversed only second row")
-arr[1] = np.flip(arr[1])
-print(arr)
-print("Reversed only third column")
-arr[:, 2]=np.flip(arr[:, 2],axis=0)
-print(arr)
+random_arr=np.random.randint(10,30,(5,5))
+print("random array")
+print(random_arr)
+print("Reversed middle row")
+random_arr[2]=np.flip(random_arr[2])
+print(random_arr)
+print("Second column")
+random_arr[:, 1]=np.flip(random_arr[:, 1],axis=0)
+print(random_arr)
