@@ -704,12 +704,23 @@ Flip it and verify if the sum of elements changes or not.'''
 '''69.Create a 3x4 matrix.
 Flip it twice using np.flip().
 Check if it returns the original matrix.'''
+# import numpy as np
+# random_arr=np.random.randint(10,30,(3,4))
+# print(random_arr)
+# flipped=np.flip(random_arr)
+# print("First filp:")
+# print(flipped)
+# flipped2=np.flip(flipped)
+# print("Second flip")
+# print(flipped2)
+
+'''70.Create a 4x4 matrix.
+Transpose it and then flip rows.'''
 import numpy as np
 random_arr=np.random.randint(10,30,(3,4))
-print(random_arr)
-flipped=np.flip(random_arr)
-print("First filp:")
+transpose=random_arr.T
+print("Transpose")
+print(transpose)
+flipped=np.flip(transpose,axis=0)
+print("Flipped row")
 print(flipped)
-flipped2=np.flip(flipped)
-print("Second flip")
-print(flipped2)
