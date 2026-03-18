@@ -716,11 +716,48 @@ Check if it returns the original matrix.'''
 
 '''70.Create a 4x4 matrix.
 Transpose it and then flip rows.'''
+# import numpy as np
+# random_arr=np.random.randint(10,30,(3,4))
+# transpose=random_arr.T
+# print("Transpose")
+# print(transpose)
+# flipped=np.flip(transpose,axis=0)
+# print("Flipped row")
+# print(flipped)
+
+'''71.Create a 4X4 matrix.
+Flip columns and then transpose the matrix.'''
+# import numpy as np
+# random_arr=np.random.randint(10,30,(3,4))
+# print("Original matrix")
+# print(random_arr)
+# flipped=np.flip(random_arr,axis=1)
+# print("Flipped")
+# print(flipped)
+# transpose=flipped.T
+# print("Transpose matrix")
+# print(transpose)
+
+'''72.Generate 20 random integers between 0 and 50.
+Reshape them into 4x5 matrix.
+Flip the matrix vertically and horizontally.'''
+# import numpy as np
+# random_arr=np.random.randint(0,50,size=20)
+# print("Random array")
+# print(random_arr)
+# print("Reshape the matrix")
+# reshape=random_arr.reshape(4,5)
+# print(reshape)
+# flip_vertically=np.flip(reshape,axis=0)
+# print("flipped vertically")
+# print(flip_vertically)
+# flip_horizontally=np.flip(reshape,axis=1)
+# print("flipped horizontally")
+# print(flip_horizontally)
+
+'''73.Extract the diagonal elements after flipping the matrix.'''
 import numpy as np
-random_arr=np.random.randint(10,30,(3,4))
-transpose=random_arr.T
-print("Transpose")
-print(transpose)
-flipped=np.flip(transpose,axis=0)
-print("Flipped row")
-print(flipped)
+random_arr=np.random.randint(0,50,(4,5))
+print("Random array")
+print(random_arr)
+diagonal=np.
