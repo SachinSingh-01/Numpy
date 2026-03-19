@@ -284,7 +284,7 @@ Check if the original array changes.'''
 # print("Original array:",arr)
 # print(second_row)
 
-'''28.Create a 3x3 matrix:
+'''28.Create a 3x3 random_arr:
 [[1,2,3],
  [4,5,6],
  [7,8,9]]
@@ -297,7 +297,7 @@ Add this vector using broadcasting:'''
 # result=arr+vector
 # print(result)
 
-'''29.Create a 4x4 random integer matrix.
+'''29.Create a 4x4 random integer random_arr.
 Select all numbers that are:
 greater than 5
 less than 12'''
@@ -371,7 +371,7 @@ Split it into 3 equal arrays.'''
 #     print(f"Part {i+1}:")
 #     print(sub_array)
 
-'''35.Create a 3x3 matrix.
+'''35.Create a 3x3 random_arr.
 Select:
 first row
 last column'''
@@ -381,7 +381,7 @@ last column'''
 # element=arr[0,-1]
 # print(element)
 
-'''36.Create a matrix:
+'''36.Create a random_arr:
 [[1,2,3],
  [4,5,6],
  [7,8,9]]
@@ -397,7 +397,7 @@ sum of elements'''
 # print("Minimum number:",arr.min())
 # print("Sum of element:",arr.sum())
 
-'''37.Find the sum of columns of the matrix above'''
+'''37.Find the sum of columns of the random_arr above'''
 # import numpy as np
 # arr=np.array([[1,2,3],
 # [4,5,6],
@@ -426,7 +426,7 @@ Find unique values.'''
 # print("Unique_number:",unique_number)
 # print("Indices of first occurrence:",first_occurrence)
 
-'''41.Create this matrix:
+'''41.Create this random_arr:
 [[1,2,3,4],
  [5,6,7,8],
  [9,10,11,12],
@@ -454,7 +454,7 @@ Sort the array.'''
 # index=np.argsort(arr)
 # print(index)
 
-'''44.Create a 5x5 random matrix.
+'''44.Create a 5x5 random random_arr.
 Find:
 max of each column
 min of each row'''
@@ -476,7 +476,7 @@ Find:mean,max,min,standard deviation'''
 # print("Minimum number:",arr.mean())
 # print("Standard deviation:",arr.std())
 
-'''46.Reshape that dataset into 10x10 matrix.'''
+'''46.Reshape that dataset into 10x10 random_arr.'''
 # import numpy as np
 # arr=np.random.randint(1,100,size=100)
 # reshaping=np.reshape(arr,(10,10))
@@ -489,7 +489,7 @@ Find:mean,max,min,standard deviation'''
 # print("Unique number:",unique_number)
 # print("Count=",count)
 
-'''48.Normalize the matrix by dividing all elements by 10.'''
+'''48.Normalize the random_arr by dividing all elements by 10.'''
 # import numpy as np
 # arr=np.random.randint(1,100,size=100)
 # normalize=arr/10.0
@@ -498,7 +498,7 @@ Find:mean,max,min,standard deviation'''
 # print("Normalize array:",normalize)
 # print("Number divisible by 10:",divisible_element)
 
-'''49.Create a 4x4 matrix.
+'''49.Create a 4x4 random_arr.
 Replace all values greater than 10 with 0.'''
 # import numpy as np
 # random_array=np.random.randint(1,20,(4,4))
@@ -522,14 +522,14 @@ addition,multiplication'''
 # print("Addition:",addition)
 # print("Multiplication:",multiplication)
 
-'''52.Create a matrix and extract the diagonal elements.'''
+'''52.Create a random_arr and extract the diagonal elements.'''
 # import numpy as np
 # random_array=np.random.randint(1,20,(4,4))
 # diagonal=np.diagonal(random_array)
 # print(random_array)
 # print("Diagonal:",diagonal)
 
-'''53.Create a matrix and calculate the mean of each column and each row.'''
+'''53.Create a random_arr and calculate the mean of each column and each row.'''
 # import numpy as np
 # random_array=np.random.randint(1,20,(4,4))
 # print(random_array)
@@ -538,7 +538,7 @@ addition,multiplication'''
 # print("Mean of column:",mean_column)
 # print("Mean of rows:",mean_row)
 
-'''54.Create a random 5x5 matrix and sort each row and each column.'''
+'''54.Create a random 5x5 random_arr and sort each row and each column.'''
 # import numpy as np
 # random_array=np.random.randint(2,30,(5,5))
 # print(random_array)
@@ -549,21 +549,21 @@ addition,multiplication'''
 # print("\n")
 # print(sort_column)
 
-'''55.Create a matrix and flatten it into 1D array.'''
+'''55.Create a random_arr and flatten it into 1D array.'''
 # import numpy as np
 # random_array=np.random.randint(2,30,(2,3))
 # print(random_array)
 # flattent=random_array.flatten()
 # print("Flattent:",flattent)
 
-'''56.Create a large matrix (100x100) and compute its total sum.'''
+'''56.Create a large random_arr (100x100) and compute its total sum.'''
 # import numpy as np
 # random_array=np.random.randint(2,30,(100,100))
 # print(random_array)
 # total=random_array.sum()
 # print("Total sum:",total)
 
-'''57.Transpose the matrix an array from 1 to 12 using np.arange().Print its new shape.'''
+'''57.Transpose the random_arr an array from 1 to 12 using np.arange().Print its new shape.'''
 # import numpy as np
 # random=np.random.randint(1,12,(2,2))
 # print(random)
@@ -585,7 +585,7 @@ addition,multiplication'''
 B =
 [[5,6],
  [7,8]]
-Multiply matrix A and B element-wise.'''
+Multiply random_arr A and B element-wise.'''
 # import numpy as np
 # a=np.array([[1,2],
 # [3,4]])
@@ -595,7 +595,7 @@ Multiply matrix A and B element-wise.'''
 # multiply_element_wise=a*b
 # print("Multiply:",multiply_element_wise)
 
-'''60.Transpose the random matrix. and find it's maximum and minimum value of each rows an column
+'''60.Transpose the random random_arr. and find it's maximum and minimum value of each rows an column
 '''
 # import numpy as np
 # random_array=np.random.randint(1,20,(4,4))
@@ -633,17 +633,17 @@ Reverse the array using np.flip().'''
 # slicing=a[::-1]
 # print(slicing)
 
-'''64.Create the matrix:
+'''64.Create the random_arr:
 [[1,2,3],
  [4,5,6]]
-Flip the entire matrix.'''
+Flip the entire random_arr.'''
 # import numpy as np
 # arr_2d=np.array([[1,2,3],
 # [4,5,6]])
 # flip=np.flip(arr_2d)
 # print(flip)
 
-'''65.Create the matrix:
+'''65.Create the random_arr:
 [[1,2,3],
  [4,5,6],
  [7,8,9]]
@@ -659,9 +659,9 @@ Reverse only the rows and column.'''
 # print("Column reverse")
 # print(rev_only_column)
 
-'''66.Create a matrix using:
+'''66.Create a random_arr using:
 np.arange(1,13).reshape(3,4)
-Flip the matrix completely also reversed only the second row.
+Flip the random_arr completely also reversed only the second row.
 also reverse only the third column'''
 # import numpy as np
 # arr=np.arange(1,13).reshape(3,4)
@@ -676,7 +676,7 @@ also reverse only the third column'''
 # arr[:, 2]=np.flip(arr[:, 2],axis=0)
 # print(arr)
 
-'''67.Create a 5x5 random matrix.
+'''67.Create a 5x5 random random_arr.
 Reverse the middle row and second column'''
 # import numpy as np
 # random_arr=np.random.randint(10,30,(5,5))
@@ -690,7 +690,7 @@ Reverse the middle row and second column'''
 # random_arr[:,1]=np.flip(random_arr[:,1],axis=0)
 # print(random_arr)
 
-'''68.Create a 4x5 matrix.
+'''68.Create a 4x5 random_arr.
 Flip it and verify if the sum of elements changes or not.'''
 # import numpy as np
 # random_arr=np.random.randint(10,30,(4,5))
@@ -701,9 +701,9 @@ Flip it and verify if the sum of elements changes or not.'''
 # after_flipped=flipped.sum()
 # print("Sum after flipped:",after_flipped)
 
-'''69.Create a 3x4 matrix.
+'''69.Create a 3x4 random_arr.
 Flip it twice using np.flip().
-Check if it returns the original matrix.'''
+Check if it returns the original random_arr.'''
 # import numpy as np
 # random_arr=np.random.randint(10,30,(3,4))
 # print(random_arr)
@@ -714,7 +714,7 @@ Check if it returns the original matrix.'''
 # print("Second flip")
 # print(flipped2)
 
-'''70.Create a 4x4 matrix.
+'''70.Create a 4x4 random_arr.
 Transpose it and then flip rows.'''
 # import numpy as np
 # random_arr=np.random.randint(10,30,(3,4))
@@ -725,27 +725,27 @@ Transpose it and then flip rows.'''
 # print("Flipped row")
 # print(flipped)
 
-'''71.Create a 4X4 matrix.
-Flip columns and then transpose the matrix.'''
+'''71.Create a 4X4 random_arr.
+Flip columns and then transpose the random_arr.'''
 # import numpy as np
 # random_arr=np.random.randint(10,30,(3,4))
-# print("Original matrix")
+# print("Original random_arr")
 # print(random_arr)
 # flipped=np.flip(random_arr,axis=1)
 # print("Flipped")
 # print(flipped)
 # transpose=flipped.T
-# print("Transpose matrix")
+# print("Transpose random_arr")
 # print(transpose)
 
 '''72.Generate 20 random integers between 0 and 50.
-Reshape them into 4x5 matrix.
-Flip the matrix vertically and horizontally.'''
+Reshape them into 4x5 random_arr.
+Flip the random_arr vertically and horizontally.'''
 # import numpy as np
 # random_arr=np.random.randint(0,50,size=20)
 # print("Random array")
 # print(random_arr)
-# print("Reshape the matrix")
+# print("Reshape the random_arr")
 # reshape=random_arr.reshape(4,5)
 # print(reshape)
 # flip_vertically=np.flip(reshape,axis=0)
@@ -755,7 +755,7 @@ Flip the matrix vertically and horizontally.'''
 # print("flipped horizontally")
 # print(flip_horizontally)
 
-'''73.Extract the diagonal elements after flipping the matrix.'''
+'''73.Extract the diagonal elements after flipping the random_arr.'''
 # import numpy as np
 # random_arr=np.random.randint(0,50,(4,5))
 # print("Random array")
@@ -764,7 +764,7 @@ Flip the matrix vertically and horizontally.'''
 # print("Diagonal element")
 # print(diagonal)
 
-'''74.Create a 6x6 matrix.
+'''74.Create a 6x6 random_arr.
 Flip only the last two rows and  first three columns.'''
 # import numpy as np
 # random_arr=np.random.randint(10,50,(6,6))
@@ -774,7 +774,7 @@ Flip only the last two rows and  first three columns.'''
 # print("\nMatrix after flipping last 2 rows & first 3 columns:")
 # print(random_arr)
 
-'''75.Create a random 5x5 matrix.
+'''75.Create a random 5x5 random_arr.
 Find the max value before and after flipping.
 Compare.'''
 # import numpy as np
@@ -790,9 +790,40 @@ Compare.'''
 # print("After flip maximum value")
 # print(after_max)
 
-'''76.Create a 3x4 matrix.
+'''76.Create a 3x4 random_arr.
 Reverse each row individually using a loop.'''
+# import numpy as np
+# random_arr=np.random.randint(10,50,(3,4))
+# print("Random matrix")
+# for row in random_arr:
+#     print(row)
+# for i in range(len(random_arr)):
+#     random_arr[i] = random_arr[i][::-1]
+
+# print("\nMatrix with Reversed Rows:")
+# for row in random_arr:
+#     print(row)
+
+'''77.Create a 4x4 matrix.
+Reverse:
+first row
+last column
+entire matrix
+in three separate steps.'''
 import numpy as np
-random_arr=np.random.randint(10,50,(3,4))
+random_arr=np.random.randint(10,50,(4,4))
 print("Random matrix")
 print(random_arr)
+
+random_arr[0]=np.flip(random_arr[0])
+print("First row reversed")
+print(random_arr)
+
+random_arr[:,-1]=np.flip(random_arr[:,-1])
+print("Last column reversed")
+print(random_arr)
+
+entire_flip=np.flip(random_arr)
+print("Entire flip")
+print(entire_flip)
+
