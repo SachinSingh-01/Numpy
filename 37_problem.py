@@ -810,20 +810,27 @@ first row
 last column
 entire matrix
 in three separate steps.'''
+# import numpy as np
+# random_arr=np.random.randint(10,50,(4,4))
+# print("Random matrix")
+# print(random_arr)
+
+# random_arr[0]=np.flip(random_arr[0])
+# print("First row reversed")
+# print(random_arr)
+
+# random_arr[:,-1]=np.flip(random_arr[:,-1])
+# print("Last column reversed")
+# print(random_arr)
+
+# entire_flip=np.flip(random_arr)
+# print("Entire flip")
+# print(entire_flip)
+
+'''78.Create a 1D array from 1 to 12 and reshape it into a 3x4 matrix.'''
 import numpy as np
-random_arr=np.random.randint(10,50,(4,4))
-print("Random matrix")
-print(random_arr)
-
-random_arr[0]=np.flip(random_arr[0])
-print("First row reversed")
-print(random_arr)
-
-random_arr[:,-1]=np.flip(random_arr[:,-1])
-print("Last column reversed")
-print(random_arr)
-
-entire_flip=np.flip(random_arr)
-print("Entire flip")
-print(entire_flip)
-
+arr_1d=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print(arr_1d)
+reshape=np.reshape(arr_1d,(3,4))
+print("Reshape")
+print(reshape)
