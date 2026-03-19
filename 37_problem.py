@@ -836,11 +836,33 @@ in three separate steps.'''
 # print(reshape)
 
 '''79.Flatten the matrix using .flatten(),.ravel().'''
-import numpy as np
-arr_1d=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
-print(arr_1d)
-flatten=arr_1d.flatten()
-print(flatten)
-ravel=arr_1d.ravel()
-print(ravel)
+# import numpy as np
+# arr_1d=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+# print(arr_1d)
+# flatten=arr_1d.flatten()
+# print(flatten)
+# ravel=arr_1d.ravel()
+# print(ravel)
 
+'''80.Modify the first element of the flattened array (using .ravel()).
+Check if the original matrix changes.'''
+# import numpy as np
+# random=np.random.randint(10,20,(3,3))
+# print("Original array")
+# print(random)
+# rav=random.ravel()
+# print("Ravel")
+# print(rav)
+# rav[0]=88
+# print("Change the first element")
+# print(random)
+
+'''81.Create a matrix and flatten it, then reshape it back.'''
+# import numpy as np
+# random_arr=np.random.randint(10,20,(3,3))
+# print("Original matrix")
+# print(random_arr)
+# flat=random_arr.flatten()
+# print(flat)
+# reshape=np.reshape(flat,(3,3))
+# print(reshape)
