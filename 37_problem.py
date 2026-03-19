@@ -756,8 +756,43 @@ Flip the matrix vertically and horizontally.'''
 # print(flip_horizontally)
 
 '''73.Extract the diagonal elements after flipping the matrix.'''
+# import numpy as np
+# random_arr=np.random.randint(0,50,(4,5))
+# print("Random array")
+# print(random_arr)
+# diagonal=np.diagonal(random_arr)
+# print("Diagonal element")
+# print(diagonal)
+
+'''74.Create a 6x6 matrix.
+Flip only the last two rows and  first three columns.'''
+# import numpy as np
+# random_arr=np.random.randint(10,50,(6,6))
+# print("Random array")
+# print(random_arr)
+# random_arr[-2:, :3] = np.flip(random_arr[-2:, :3])
+# print("\nMatrix after flipping last 2 rows & first 3 columns:")
+# print(random_arr)
+
+'''75.Create a random 5x5 matrix.
+Find the max value before and after flipping.
+Compare.'''
+# import numpy as np
+# random_arr=np.random.randint(10,50,(6,6))
+# print("Matrix")
+# print(random_arr)
+# before_max=random_arr.max()
+# print("Before flip maximum value")
+# print(before_max)
+
+# flipped=np.flip(random_arr)
+# after_max=flipped.max()
+# print("After flip maximum value")
+# print(after_max)
+
+'''76.Create a 3x4 matrix.
+Reverse each row individually using a loop.'''
 import numpy as np
-random_arr=np.random.randint(0,50,(4,5))
-print("Random array")
+random_arr=np.random.randint(10,50,(3,4))
+print("Random matrix")
 print(random_arr)
-diagonal=np.
