@@ -902,13 +902,25 @@ Check if the original matrix changes.'''
 # print(greater)
 
 '''85.Create two matrices and add them using broadcasting.'''
+# import numpy as np
+# matrix1=np.random.randint(1,15,(3,3))
+# matrix2=np.random.randint(15,25,(3,3))
+# print("First matrix")
+# print(matrix1)
+# print("Second matrix")
+# print(matrix2)
+# addition=matrix1+matrix2
+# print("After addition")
+# print(addition)
+
+'''86.Create a matrix.Flip columns, then transpose it.'''
 import numpy as np
-matrix1=np.random.randint(1,15,(3,3))
-matrix2=np.random.randint(15,25,(3,3))
+matrix1=np.random.randint(15,25,(3,3))
 print("First matrix")
 print(matrix1)
-print("Second matrix")
-print(matrix2)
-addition=matrix1+matrix2
-print("After addition")
-print(addition)
+fliip=np.flip(matrix1,axis=0)
+print("Flipped")
+print(fliip)
+transpose=fliip.T
+print("After transpose")
+print(transpose)
