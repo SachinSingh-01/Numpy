@@ -866,3 +866,17 @@ Check if the original matrix changes.'''
 # print(flat)
 # reshape=np.reshape(flat,(3,3))
 # print(reshape)
+
+'''82.Create a matrix and reverse only the second row and third column.'''
+import numpy as np
+random_arr=np.random.randint(10,20,(3,3))
+print("Original matrix")
+print(random_arr)
+
+random_arr[1]=np.flip(random_arr[1])
+print("Reversed only second row")
+print(random_arr)
+
+random_arr[:,2]=np.flip(random_arr[:,2])
+print("Reversed only third column")
+print(random_arr)
