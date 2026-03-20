@@ -914,13 +914,26 @@ Check if the original matrix changes.'''
 # print(addition)
 
 '''86.Create a matrix.Flip columns, then transpose it.'''
+# import numpy as np
+# matrix1=np.random.randint(15,25,(3,3))
+# print("First matrix")
+# print(matrix1)
+# fliip=np.flip(matrix1,axis=0)
+# print("Flipped")
+# print(fliip)
+# transpose=fliip.T
+# print("After transpose")
+# print(transpose)
+
+'''87.Create a matrix and reshape it into a 1D array.
+Then reshape it into a column vector.'''
 import numpy as np
 matrix1=np.random.randint(15,25,(3,3))
 print("First matrix")
 print(matrix1)
-fliip=np.flip(matrix1,axis=0)
-print("Flipped")
-print(fliip)
-transpose=fliip.T
-print("After transpose")
-print(transpose)
+reshape_1d=matrix1.reshape(-1)
+print("Reshape in 1D")
+print(reshape_1d)
+again_reshape=matrix1.reshape(-1,1)
+print("Column vector")
+print(again_reshape)
