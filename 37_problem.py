@@ -1017,12 +1017,42 @@ mean,standard deviation'''
 # print(normalize)
 
 '''93.Create a matrix and replace values greater than mean with 0.'''
-import numpy as np
-random=np.random.randint(15,25,(3,3))
-print("Original random")
-print(random)
-mean_val = np.mean(random)
-print(f"Mean: {mean_val}")
-result = np.where(random > mean_val, 0, random)
+# import numpy as np
+# random=np.random.randint(15,25,(3,3))
+# print("Original random")
+# print(random)
+# mean_val = np.mean(random)
+# print(f"Mean: {mean_val}")
+# result = np.where(random > mean_val, 0, random)
+# print(f"Result:\n{result}")
 
-print(f"Result:\n{result}")
+'''94.Create a matrix and extract positions using np.nonzero().'''
+import numpy as np
+matrix = np.array([
+    [0, 5, 0],
+    [3, 0, 0],
+    [0, 0, 8],
+    [1, 2, 0]
+])
+print("Original Matrix:")
+print(matrix)
+nonzero_positions = np.nonzero(matrix)
+print("\nResult of np.nonzero(matrix):")
+print(nonzero_positions)
+coordinates = list(zip(nonzero_positions[0], nonzero_positions[1]))
+print("\nExtracted Coordinates of Non-Zero Elements (row, col):")
+for coord in coordinates:
+    print(coord)
+
+'''95.Create a matrix and reshape it into (1, n) form and (n,1) form.'''
+# import numpy as np
+# matrix = np.array([[1, 2, 3], 
+#                    [4, 5, 6]])
+# print("Original Matrix (2, 3):\n", matrix)
+# reshaped_matrix = matrix.reshape(1, -1)
+# print("\nReshaped Matrix (1, n):\n", reshaped_matrix)
+# print("\nNew Shape:", reshaped_matrix.shape)
+
+# reshaped_matrix2= matrix.reshape(-1, 1)
+# print("\nReshaped Matrix (n, 1):\n", reshaped_matrix2)
+# print("\nNew Shape:", reshaped_matrix2.shape)
