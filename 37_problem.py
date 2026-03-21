@@ -1059,7 +1059,31 @@ mean,standard deviation'''
 
 '''96.Use help() to understand np.array.
 Create a 1D array and 2D array'''
+# import numpy as np
+# a=np.array([1,2,3,4])
+# help(np.array)
+# help(np.unique)
+
+'''MSE concept'''
+# import numpy as np
+# pred = np.array([3,5,2])
+# labels = np.array([2,5,4])
+# mse = np.mean((pred - labels)**2)
+
+'''97.Create two arrays:
+pred = [1,2,3]
+labels = [1,2,3]
+Compute the difference (pred - labels).'''
+# import numpy as np
+# pred=np.array([1,2,3])
+# labels=np.array([8,7,6])
+# mse=np.mean((pred-labels))
+# print(mse)
+
+'''98.Using the same arrays, compute:
+squared difference'''
 import numpy as np
-a=np.array([1,2,3,4])
-help(np.array)
-help(np.unique)
+pred=np.array([1,2,3])
+labels=np.array([8,7,6])
+mse=np.mean((pred-labels)**2)
+print(mse)
