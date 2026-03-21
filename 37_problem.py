@@ -794,7 +794,7 @@ Compare.'''
 Reverse each row individually using a loop.'''
 # import numpy as np
 # random_arr=np.random.randint(10,50,(3,4))
-# print("Random matrix")
+# print("Random random")
 # for row in random_arr:
 #     print(row)
 # for i in range(len(random_arr)):
@@ -804,15 +804,15 @@ Reverse each row individually using a loop.'''
 # for row in random_arr:
 #     print(row)
 
-'''77.Create a 4x4 matrix.
+'''77.Create a 4x4 random.
 Reverse:
 first row
 last column
-entire matrix
+entire random
 in three separate steps.'''
 # import numpy as np
 # random_arr=np.random.randint(10,50,(4,4))
-# print("Random matrix")
+# print("Random random")
 # print(random_arr)
 
 # random_arr[0]=np.flip(random_arr[0])
@@ -827,7 +827,7 @@ in three separate steps.'''
 # print("Entire flip")
 # print(entire_flip)
 
-'''78.Create a 1D array from 1 to 12 and reshape it into a 3x4 matrix.'''
+'''78.Create a 1D array from 1 to 12 and reshape it into a 3x4 random.'''
 # import numpy as np
 # arr_1d=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 # print(arr_1d)
@@ -835,7 +835,7 @@ in three separate steps.'''
 # print("Reshape")
 # print(reshape)
 
-'''79.Flatten the matrix using .flatten(),.ravel().'''
+'''79.Flatten the random using .flatten(),.ravel().'''
 # import numpy as np
 # arr_1d=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 # print(arr_1d)
@@ -845,7 +845,7 @@ in three separate steps.'''
 # print(ravel)
 
 '''80.Modify the first element of the flattened array (using .ravel()).
-Check if the original matrix changes.'''
+Check if the original random changes.'''
 # import numpy as np
 # random=np.random.randint(10,20,(3,3))
 # print("Original array")
@@ -857,20 +857,20 @@ Check if the original matrix changes.'''
 # print("Change the first element")
 # print(random)
 
-'''81.Create a matrix and flatten it, then reshape it back.'''
+'''81.Create a random and flatten it, then reshape it back.'''
 # import numpy as np
 # random_arr=np.random.randint(10,20,(3,3))
-# print("Original matrix")
+# print("Original random")
 # print(random_arr)
 # flat=random_arr.flatten()
 # print(flat)
 # reshape=np.reshape(flat,(3,3))
 # print(reshape)
 
-'''82.Create a matrix and reverse only the second row and third column.'''
+'''82.Create a random and reverse only the second row and third column.'''
 # import numpy as np
 # random_arr=np.random.randint(10,20,(3,3))
-# print("Original matrix")
+# print("Original random")
 # print(random_arr)
 
 # random_arr[1]=np.flip(random_arr[1])
@@ -881,22 +881,22 @@ Check if the original matrix changes.'''
 # print("Reversed only third column")
 # print(random_arr)
 
-'''83.Flatten that matrix and find the sum.'''
+'''83.Flatten that random and find the sum.'''
 # import numpy as np
 # random_arr=np.random.randint(10,20,(3,3))
-# print("Original matrix")
+# print("Original random")
 # print(random_arr)
 # flat=random_arr.flatten()
-# print("Flatten matrix")
+# print("Flatten random")
 # print(flat)
 # addition=flat.sum()
-# print("Sum of the matrix")
+# print("Sum of the random")
 # print(addition)
 
-'''84.Create a matrix and extract all elements greater than 5.'''
+'''84.Create a random and extract all elements greater than 5.'''
 # import numpy as np
 # random_arr=np.random.randint(1,15,(3,3))
-# print("Original matrix")
+# print("Original random")
 # print(random_arr)
 # greater=random_arr[random_arr>5]
 # print(greater)
@@ -905,18 +905,18 @@ Check if the original matrix changes.'''
 # import numpy as np
 # matrix1=np.random.randint(1,15,(3,3))
 # matrix2=np.random.randint(15,25,(3,3))
-# print("First matrix")
+# print("First random")
 # print(matrix1)
-# print("Second matrix")
+# print("Second random")
 # print(matrix2)
 # addition=matrix1+matrix2
 # print("After addition")
 # print(addition)
 
-'''86.Create a matrix.Flip columns, then transpose it.'''
+'''86.Create a random.Flip columns, then transpose it.'''
 # import numpy as np
 # matrix1=np.random.randint(15,25,(3,3))
-# print("First matrix")
+# print("First random")
 # print(matrix1)
 # fliip=np.flip(matrix1,axis=0)
 # print("Flipped")
@@ -925,15 +925,104 @@ Check if the original matrix changes.'''
 # print("After transpose")
 # print(transpose)
 
-'''87.Create a matrix and reshape it into a 1D array.
+'''87.Create a random and reshape it into a 1D array.
 Then reshape it into a column vector.'''
+# import numpy as np
+# matrix1=np.random.randint(15,25,(3,3))
+# print("First random")
+# print(matrix1)
+# reshape_1d=matrix1.reshape(-1)
+# print("Reshape in 1D")
+# print(reshape_1d)
+# again_reshape=matrix1.reshape(-1,1)
+# print("Column vector")
+# print(again_reshape)
+
+'''88.Create a random random.
+Find unique values after flattening.'''
+# import numpy as np
+# random=np.random.randint(15,25,(3,3))
+# print("Original random")
+# print(random)
+# flattening=random.flatten()
+# print("Flatten")
+# print(flattening)
+# unique_value=np.unique(flattening)
+# print("Unique value")
+# print(flattening)
+
+'''89.Create a random and reverse its diagonal elements.'''
+# import numpy as np
+# random=np.random.randint(15,25,(3,3))
+# print("Original random")
+# print(random)
+# # diagonal=np.diagonal(random)
+# # print("Diagonal element")
+# # print(diagonal)
+# # rev_diagonal=np.flip(diagonal)
+# # print("Diagonal reverse")
+# # print(rev_diagonal)
+
+
+# reversed_diagonal = np.diagonal(random)[::-1]
+# np.fill_diagonal(random, reversed_diagonal)
+# print("\nMatrix after reversing the main diagonal:")
+# print(random)
+
+# matrix = np.array([
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ])
+
+# print("Original Matrix:")
+# print(matrix)
+# reversed_diagonal = np.diagonal(matrix)[::-1]
+# np.fill_diagonal(matrix, reversed_diagonal)
+# print("\nMatrix after reversing the main diagonal:")
+# print(matrix)
+
+'''90.Flatten the dataset and compute:
+mean,standard deviation'''
+# import numpy as np
+# random=np.random.randint(15,25,(3,3))
+# print("Original random")
+# print(random)
+# flat=random.flatten()
+# print("Flattent:",flat)
+# print("Mean:",np.mean(flat))
+# print("Standard deviation:",np.std(flat))
+
+'''91.Flip the dataset matrix vertically.'''
+# import numpy as np
+# random=np.random.randint(15,25,(3,3))
+# print("Original random")
+# print(random)
+# flip_vertically=random.reshape((1,-1))
+# print("vertically flip")
+# print(flip_vertically)
+# flip_horizontally=random.reshape((1,-1))
+# print("Horizontally flip")
+# print(flip_horizontally)
+
+'''92.Create a matrix and normalize it by dividing by max value.'''
+# import numpy as np
+# random=np.random.randint(15,25,(3,3))
+# print("Original random")
+# print(random)
+# max_term=np.max(random)
+# print("Max term:",max_term)
+# normalize=random/max_term
+# print("Normalize")
+# print(normalize)
+
+'''93.Create a matrix and replace values greater than mean with 0.'''
 import numpy as np
-matrix1=np.random.randint(15,25,(3,3))
-print("First matrix")
-print(matrix1)
-reshape_1d=matrix1.reshape(-1)
-print("Reshape in 1D")
-print(reshape_1d)
-again_reshape=matrix1.reshape(-1,1)
-print("Column vector")
-print(again_reshape)
+random=np.random.randint(15,25,(3,3))
+print("Original random")
+print(random)
+mean_val = np.mean(random)
+print(f"Mean: {mean_val}")
+result = np.where(random > mean_val, 0, random)
+
+print(f"Result:\n{result}")
