@@ -1057,4 +1057,9 @@ mean,standard deviation'''
 # print("\nReshaped Matrix (n, 1):\n", reshaped_matrix2)
 # print("\nNew Shape:", reshaped_matrix2.shape)
 
-
+'''96.Use help() to understand np.array.
+Create a 1D array and 2D array'''
+import numpy as np
+a=np.array([1,2,3,4])
+help(np.array)
+help(np.unique)
