@@ -1027,22 +1027,22 @@ mean,standard deviation'''
 # print(f"Result:\n{result}")
 
 '''94.Create a matrix and extract positions using np.nonzero().'''
-import numpy as np
-matrix = np.array([
-    [0, 5, 0],
-    [3, 0, 0],
-    [0, 0, 8],
-    [1, 2, 0]
-])
-print("Original Matrix:")
-print(matrix)
-nonzero_positions = np.nonzero(matrix)
-print("\nResult of np.nonzero(matrix):")
-print(nonzero_positions)
-coordinates = list(zip(nonzero_positions[0], nonzero_positions[1]))
-print("\nExtracted Coordinates of Non-Zero Elements (row, col):")
-for coord in coordinates:
-    print(coord)
+# import numpy as np
+# matrix = np.array([
+#     [0, 5, 0],
+#     [3, 0, 0],
+#     [0, 0, 8],
+#     [1, 2, 0]
+# ])
+# print("Original Matrix:")
+# print(matrix)
+# nonzero_positions = np.nonzero(matrix)
+# print("\nResult of np.nonzero(matrix):")
+# print(nonzero_positions)
+# coordinates = list(zip(nonzero_positions[0], nonzero_positions[1]))
+# print("\nExtracted Coordinates of Non-Zero Elements (row, col):")
+# for coord in coordinates:
+#     print(coord)
 
 '''95.Create a matrix and reshape it into (1, n) form and (n,1) form.'''
 # import numpy as np
@@ -1056,3 +1056,5 @@ for coord in coordinates:
 # reshaped_matrix2= matrix.reshape(-1, 1)
 # print("\nReshaped Matrix (n, 1):\n", reshaped_matrix2)
 # print("\nNew Shape:", reshaped_matrix2.shape)
+
+
