@@ -1082,8 +1082,25 @@ Compute the difference (pred - labels).'''
 
 '''98.Using the same arrays, compute:
 squared difference'''
+# import numpy as np
+# pred=np.array([1,2,3])
+# labels=np.array([8,7,6])
+# mse=np.mean((pred-labels)**2)
+# print(mse)
+
+'''99.Compute the sum of squared differences.'''
+# import numpy as np
+# pred=np.array([1,2,3])
+# labels=np.array([8,7,6])
+# mse=np.sum((pred-labels)**2)
+# print(mse)
+
+'''100.Create two arrays:
+pred = np.arange(1,11)
+labels = np.arange(2,12)
+Compute MSE.'''
 import numpy as np
-pred=np.array([1,2,3])
-labels=np.array([8,7,6])
+pred = np.arange(1,11)
+labels = np.arange(2,12)
 mse=np.mean((pred-labels)**2)
 print(mse)
