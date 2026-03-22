@@ -1099,8 +1099,18 @@ squared difference'''
 pred = np.arange(1,11)
 labels = np.arange(2,12)
 Compute MSE.'''
+# import numpy as np
+# pred = np.arange(1,11)
+# labels = np.arange(2,12)
+# mse=np.mean((pred-labels)**2)
+# mse2=np.sum((pred-labels)//2)
+# print(mse)
+# print(mse2)
+
+# 101.Find the absolute error instead of squared error.
+# (Hint: use np.abs())
 import numpy as np
 pred = np.arange(1,11)
 labels = np.arange(2,12)
-mse=np.mean((pred-labels)**2)
-print(mse)
+absolute_error=np.abs((pred-labels))
+print(absolute_error)
