@@ -1120,23 +1120,37 @@ Compute MSE.'''
 '''102.Create two arrays and compute:
 MSE,MAE
 Compare results'''
-import numpy as np
-pred = np.arange(1,11)
-labels = np.arange(20,30)
-print("Predicate:",pred)
-print("Labels:",labels)
-mse=np.mean(np.square(pred-labels))
-mae=np.mean(np.abs(pred-labels))
-print("MSE:",mse)
-print("MAE:",mae)
+# import numpy as np
+# pred = np.arange(1,11)
+# labels = np.arange(20,30)
+# print("Predicate:",pred)
+# print("Labels:",labels)
+# mse=np.mean(np.square(pred-labels))
+# mae=np.mean(np.abs(pred-labels))
+# print("MSE:",mse)
+# print("MAE:",mae)
 
 '''103.Create arrays:
 pred = [10,20,30]
 labels = [12,18,33]
 Compute error manually and using NumPy.'''
-pred = np.array([10, 20, 30])
-labels = np.array([12, 18, 33])
-mae_numpy = np.mean(np.abs(pred - labels))
-mse_numpy = np.mean(np.square(pred - labels))
-print(mae_numpy)
-print(mse_numpy)
+# import numpy as np
+# pred = np.array([10, 20, 30])
+# labels = np.array([12, 18, 33])
+# mae_numpy = np.mean(np.abs(pred - labels))
+# mse_numpy = np.mean(np.square(pred - labels))
+# print(mae_numpy)
+# print(mse_numpy)
+
+'''104.Reshape both arrays into column vectors and compute MSE.'''
+import numpy as np
+random=np.random.randint(1,10,size=7)
+random1=np.random.randint(20,30,size=7)
+print(random)
+print(random1)
+column=random.reshape(-1,1)
+column1=random1.reshape(-1,1)
+print("First reshape:",column)
+print("Second reshape:",column1)
+mse=np.mean(np.square(column-column1))
+print(mse)
