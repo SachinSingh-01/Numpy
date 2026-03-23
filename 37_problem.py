@@ -1109,10 +1109,34 @@ Compute MSE.'''
 
 # 101.Find the absolute error instead of squared error.
 # (Hint: use np.abs())
+# import numpy as np
+# pred = np.arange(1,11)
+# labels = np.arange(2,12)
+# absolute_error=np.abs((pred-labels))
+# print(absolute_error)
+# mae=np.mean(absolute_error)
+# print("MAE:",mae)
+
+'''102.Create two arrays and compute:
+MSE,MAE
+Compare results'''
 import numpy as np
 pred = np.arange(1,11)
-labels = np.arange(2,12)
-absolute_error=np.abs((pred-labels))
-print(absolute_error)
-mae=np.mean(absolute_error)
+labels = np.arange(20,30)
+print("Predicate:",pred)
+print("Labels:",labels)
+mse=np.mean(np.square(pred-labels))
+mae=np.mean(np.abs(pred-labels))
+print("MSE:",mse)
 print("MAE:",mae)
+
+'''103.Create arrays:
+pred = [10,20,30]
+labels = [12,18,33]
+Compute error manually and using NumPy.'''
+pred = np.array([10, 20, 30])
+labels = np.array([12, 18, 33])
+mae_numpy = np.mean(np.abs(pred - labels))
+mse_numpy = np.mean(np.square(pred - labels))
+print(mae_numpy)
+print(mse_numpy)
