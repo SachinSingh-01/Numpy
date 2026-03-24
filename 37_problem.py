@@ -1143,14 +1143,51 @@ Compute error manually and using NumPy.'''
 # print(mse_numpy)
 
 '''104.Reshape both arrays into column vectors and compute MSE.'''
+# import numpy as np
+# random=np.random.randint(1,10,size=7)
+# random1=np.random.randint(20,30,size=7)
+# print(random)
+# print(random1)
+# column=random.reshape(-1,1)
+# column1=random1.reshape(-1,1)
+# print("First reshape:",column)
+# print("Second reshape:",column1)
+# mse=np.mean(np.square(column-column1))
+# print(mse)
+
+'''105.Transpose the arrays and compute MSE again.
+Does result change?'''
+# import numpy as np
+# random=np.random.randint(1,10,size=7)
+# random1=np.random.randint(20,30,size=7)
+# print(random)
+# print(random1)
+# column=random.T
+# column1=random1.T
+# print("First reshape:",column)
+# print("Second reshape:",column1)
+# mse=np.mean(np.square(column-column1))
+# print(mse)
+# mae=np.mean(np.abs(column-column1))
+# print(mae)
+
+'''106.Create an array from 1 to 20.
+Save it using .npy
+Load it again
+Verify both arrays are equal'''
+# import numpy as np
+# arr=np.arange(1,21)
+# print(arr)
+# save=np.save("sachin",arr)
+# load=np.load("sachin.npy")
+# print("arr:",arr)
+# print("loaded:",load)
+# print("equal:",np.array_equal(arr,load))
+
+'''107.Create a 3x4 matrix.
+Flatten it
+Save the flattened array
+Load it and reshape back to original'''
 import numpy as np
-random=np.random.randint(1,10,size=7)
-random1=np.random.randint(20,30,size=7)
+random=np.random.randint(2,22,(3,4))
 print(random)
-print(random1)
-column=random.reshape(-1,1)
-column1=random1.reshape(-1,1)
-print("First reshape:",column)
-print("Second reshape:",column1)
-mse=np.mean(np.square(column-column1))
-print(mse)
