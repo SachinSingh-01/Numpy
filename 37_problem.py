@@ -1201,9 +1201,27 @@ Load it and reshape back to original'''
 
 '''108.Create an array and save it as .csv.
 Load it back.'''
+# import numpy as np
+# arr=np.array([2,3,4,5,6,7,8,9,3,44])
+# np.savetxt("Array.csv",arr)
+# loaded=np.loadtxt("Array.csv")
+# print("Original:",arr)
+# print("Loaded:",loaded)
+
+'''109.[Create two arrays:
+pred = [1,2,3]
+labels = [2,3,4]
+Save both arrays
+Load them
+Compute MSE']'''
 import numpy as np
-arr=np.array([2,3,4,5,6,7,8,9,3,44])
-np.savetxt("Array.csv",arr)
-loaded=np.loadtxt("Array.csv")
-print("Original:",arr)
-print("Loaded:",loaded)
+pred = [1,2,3]
+labels = [2,3,4]
+np.savez("multiple_arr",pred,labels)
+loaded=np.load("multiple_arr.npz")
+pred_loaded=loaded['arr_0']
+labels_loaded=loaded['arr_1']
+print("Loaded pred:",pred_loaded)
+print("Loaded labels:",labels_loaded)
+mse=np.mean(np.square(pred_loaded-labels_loaded))
+print(mse)
