@@ -1188,13 +1188,22 @@ Verify both arrays are equal'''
 Flatten it
 Save the flattened array
 Load it and reshape back to original'''
+# import numpy as np
+# random=np.random.randint(2,22,(3,4))
+# print(random)
+# flat=random.flatten()
+# print(flat)
+# save=np.save("flat_arr",flat)
+# load=np.load("flat_arr.npy")
+# print("Loaded:",load)
+# reshape_back=flat.reshape((3,4))
+# print("Reshape back:",reshape_back)
+
+'''108.Create an array and save it as .csv.
+Load it back.'''
 import numpy as np
-random=np.random.randint(2,22,(3,4))
-print(random)
-flat=random.flatten()
-print(flat)
-save=np.save("flat_arr",flat)
-load=np.load("flat_arr.npy")
-print("Loaded:",load)
-reshape_back=flat.reshape((3,4))
-print("Reshape back:",reshape_back)
+arr=np.array([2,3,4,5,6,7,8,9,3,44])
+np.savetxt("Array.csv",arr)
+loaded=np.loadtxt("Array.csv")
+print("Original:",arr)
+print("Loaded:",loaded)
