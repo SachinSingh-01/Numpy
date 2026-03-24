@@ -1191,3 +1191,10 @@ Load it and reshape back to original'''
 import numpy as np
 random=np.random.randint(2,22,(3,4))
 print(random)
+flat=random.flatten()
+print(flat)
+save=np.save("flat_arr",flat)
+load=np.load("flat_arr.npy")
+print("Loaded:",load)
+reshape_back=flat.reshape((3,4))
+print("Reshape back:",reshape_back)
