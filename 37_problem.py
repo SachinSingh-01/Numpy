@@ -1230,12 +1230,22 @@ Compute MSE']'''
 Flip it
 Save flipped version
 Compare both'''
-import numpy as np
-random=np.random.randint(20,30,(3,4))
-print(random)
-np.save("Matrix", random)
-saved = np.load("Matrix.npy")
-flipped = np.flip(saved)
-are_equal=np.array_equal(random,saved)
-print("Are they both equal:",are_equal)
+# import numpy as np
+# random=np.random.randint(20,30,(3,4))
+# print(random)
+# np.save("Matrix", random)
+# saved = np.load("Matrix.npy")
+# flipped = np.flip(saved)
+# are_equal=np.array_equal(random,saved)
+# print("Are they both equal:",are_equal)
 
+'''111.Create an array and reshape it into 2D.
+Save both versions.
+Question: Which one is better to store?'''
+import numpy as np
+array1=np.array([3,4,5,6])
+print(array1)
+array2=array1.reshape((2,2))
+print(array2)
+np.save("array1.npy",array1)
+np.save("array2.npy",array2)
