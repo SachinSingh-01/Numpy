@@ -1252,14 +1252,25 @@ Question: Which one is better to store?'''
 
 '''112.Save two arrays in a single .npz file.
 Load and access them separately.'''
+# import numpy as np
+# array_a=np.array([3,4,5,6])
+# print(array_a)
+# array_b=np.array([2,7,9,2,3])
+# print(array_b)
+# np.savez("two_array",array1="array_a",array2="array_b")
+# loaded=np.load("two_array.npz")
+# load_array1=loaded["array1"]
+# load_array2=loaded["array2"]
+# print(load_array1)
+# print(load_array2)
+
+'''113.Generate 50 random numbers.
+Save them,Load them,Sort them'''
 import numpy as np
-array_a=np.array([3,4,5,6])
-print(array_a)
-array_b=np.array([2,7,9,2,3])
-print(array_b)
-np.savez("two_array",array1="array_a",array2="array_b")
-loaded=np.load("two_array.npz")
-load_array1=loaded["array1"]
-load_array2=loaded["array2"]
-print(load_array1)
-print(load_array2)
+random=np.random.randint(1,51,size=51)
+print(random)
+np.save("50_random",random)
+loaded=np.load("50_random.npy")
+sorted=np.sort(random)
+print(sorted)
+print(loaded)
