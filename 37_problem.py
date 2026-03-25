@@ -1242,10 +1242,24 @@ Compare both'''
 '''111.Create an array and reshape it into 2D.
 Save both versions.
 Question: Which one is better to store?'''
+# import numpy as np
+# array1=np.array([3,4,5,6])
+# print(array1)
+# array2=array1.reshape((2,2))
+# print(array2)
+# np.save("array1.npy",array1)
+# np.save("array2.npy",array2)
+
+'''112.Save two arrays in a single .npz file.
+Load and access them separately.'''
 import numpy as np
-array1=np.array([3,4,5,6])
-print(array1)
-array2=array1.reshape((2,2))
-print(array2)
-np.save("array1.npy",array1)
-np.save("array2.npy",array2)
+array_a=np.array([3,4,5,6])
+print(array_a)
+array_b=np.array([2,7,9,2,3])
+print(array_b)
+np.savez("two_array",array1="array_a",array2="array_b")
+loaded=np.load("two_array.npz")
+load_array1=loaded["array1"]
+load_array2=loaded["array2"]
+print(load_array1)
+print(load_array2)
