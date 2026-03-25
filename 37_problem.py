@@ -124,7 +124,7 @@ total memory usage in bytes'''
 # import numpy as np
 # a=np.zeros((5,4,3),dtype=np.float64)
 # print("Ndim:",a.ndim)
-# print("Shape:",a.size)
+# print("Shape:",a.shape)
 # print("Total memory use:",a.nbytes)
 
 '''12.You are storing grayscale images:
@@ -314,7 +314,7 @@ Sort the array.
 Then print the index positions of sorted elements using argsort().'''
 # import numpy as np
 # arr=np.array([3,7,1,9,5])
-# print("Sorted:",arr.sort())
+# print("Sorted:",np.sort(arr))
 # print("Index sort:",arr.argsort())
 
 '''31.Create an array from 1 to 12.
@@ -378,8 +378,8 @@ last column'''
 # import numpy as np
 # arr=np.random.randint(1,12,(3,3))
 # print(arr)
-# element=arr[0,-1]
-# print(element)
+# print(arr[0])      # first row
+# print(arr[:, -1])
 
 '''36.Create a random_arr:
 [[1,2,3],
@@ -1214,14 +1214,28 @@ labels = [2,3,4]
 Save both arrays
 Load them
 Compute MSE']'''
+# import numpy as np
+# pred = [1,2,3]
+# labels = [2,3,4]
+# np.savez("multiple_arr",pred,labels)
+# loaded=np.load("multiple_arr.npz")
+# pred_loaded=loaded['arr_0']
+# labels_loaded=loaded['arr_1']
+# print("Loaded pred:",pred_loaded)
+# print("Loaded labels:",labels_loaded)
+# mse=np.mean(np.square(pred_loaded-labels_loaded))
+# print(mse)
+
+'''110.Create a matrix and save it.
+Flip it
+Save flipped version
+Compare both'''
 import numpy as np
-pred = [1,2,3]
-labels = [2,3,4]
-np.savez("multiple_arr",pred,labels)
-loaded=np.load("multiple_arr.npz")
-pred_loaded=loaded['arr_0']
-labels_loaded=loaded['arr_1']
-print("Loaded pred:",pred_loaded)
-print("Loaded labels:",labels_loaded)
-mse=np.mean(np.square(pred_loaded-labels_loaded))
-print(mse)
+random=np.random.randint(20,30,(3,4))
+print(random)
+np.save("Matrix", random)
+saved = np.load("Matrix.npy")
+flipped = np.flip(saved)
+are_equal=np.array_equal(random,saved)
+print("Are they both equal:",are_equal)
+
